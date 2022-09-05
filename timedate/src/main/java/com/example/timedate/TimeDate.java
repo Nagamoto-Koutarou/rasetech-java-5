@@ -17,7 +17,9 @@ public class TimeDate {
         DateTimeFormatter dtf2 = DateTimeFormatter.ofPattern("yyyy年MM月dd日 HH時mm分ss秒 E曜日");
         String formatNowDate = dtf2.format(nowDate);
 
-        model.addAttribute("tag", "TimeDate, World!");
+      String tag = "TimeDate World!";
+
+        model.addAttribute("tag", tag);
         model.addAttribute("timeDate", formatNowDate);
 
         return "index";
